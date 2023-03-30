@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="content">
+      <h2>Count of task: {{ count }}</h2>
+      <input type="text" class="inp-task" [(ngModel)]="newTask" />
+      <input
+        type="button"
+        value="Add"
+        class="btn-add"
+        (click)="sendTask()"
+        [disabled]="!newTask"
+      />
+  
+      <app-table
+        (countOfTask)="getCount($event)"
+        [taskName]="nameTask"
+      ></app-table>
+    </div>
+  </div>
+  

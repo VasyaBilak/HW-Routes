@@ -1,0 +1,31 @@
+<section>
+    <ul class="works-header">
+        <span class="span-bottom"><li (click)="backClicked()"><a>Last works >>></a></li></span>
+        <ul class="works-header__title">
+            <li [routerLink]="[ 'cenzor' ]" routerLinkActive="active" class="link" (click)="changeActive1()">
+                <a>Cenzor</a>
+                <ng-container *ngIf="isAdded1; then thenTemplate;"></ng-container>
+            </li>
+            <li [routerLink]="[ 'userlist' ]" routerLinkActive="active" class="link" (click)="changeActive2()">
+                <a>Users</a>
+                <ng-container *ngIf="isAdded2; then thenTemplate;"></ng-container>
+            </li>
+            <li [routerLink]="[ 'tasklist' ]" routerLinkActive="active" class="link" (click)="changeActive3()">
+                <a>Task</a>
+                <ng-container *ngIf="isAdded3; then thenTemplate;"></ng-container>
+            </li>
+        </ul>
+        <li class="works-right" [routerLink]="[ '/home' ]"><a>Back to >>> Home</a></li>
+    </ul>
+</section>
+<router-outlet></router-outlet>
+
+
+<ng-template #thenTemplate>
+    <span class="line"></span>
+</ng-template>
+
+
+
+
+

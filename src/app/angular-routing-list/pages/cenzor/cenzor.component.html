@@ -1,0 +1,28 @@
+<main class="flex"> 
+    <div class="content">
+        <h1 class="bad-words__title">Bad words: <span class="bad-words" id="badWords">{{ badWordsList }}</span></h1>
+        <form class="form" [formGroup]="reactiveForm">
+            <label>
+                <input 
+                    type="text" 
+                    name="wordHere" 
+                    #box
+                    (keyup)="getValueWord(box.value)"                     
+                    [placeholder]="placeholder" 
+                    [class]="wordHereClass" 
+                    [value]="wordHere"
+                >
+                <input type="button" value="Add" [class]="btnAdd" (click)="add()">
+                <input type="button" value="Reset" class="btn-reset" (click)="reset()">
+            </label>
+            <textarea 
+                formControlName = "textareaValue"
+                [class]="textareaClass" 
+                [placeholder]="placeholderArea"
+                #txtArea 
+                (keyup)="getAreaVal(txtArea.value)"
+                ></textarea>
+            <input type="button" value="Cenzor" class="btn-cenzor" (click)="cenzor()">
+        </form>
+    </div>
+</main>

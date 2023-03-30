@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    background-color: lightgray;
+    margin: -8px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

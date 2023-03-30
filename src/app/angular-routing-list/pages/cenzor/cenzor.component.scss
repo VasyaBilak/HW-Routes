@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 80px;
+    background-color: lightgray;
+    margin: -8px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.content {
+    width: 600px;
+    margin-top: 200px;
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.bad-words__title {
+    font-size: 20px;
+}
+
+.bad-words {
+    color: crimson;
+}
+
+input,
+textarea {
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.word-here {
+    height: 35px;
+    width: 400px;
+    padding: 5px;
+}
+
+.btn-add,
+.btn-reset {
+    width: 90px;
+    margin-left: 5px;
+}
+
+.textarea {
+    height: 70px;
+    padding: 5px;
+}
+
+.btn-add,
+.btn-reset,
+.btn-cenzor {
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: darkorange;
+}
+
+.btn-add:hover {
+    background-color: rgb(219, 122, 3);
+}
+
+.btn-add:active {
+    outline: 1px solid rgba(255, 140, 0, 0.524);
+}
+
+.btn-reset {
+    background-color: crimson;
+    color: white;
+}
+
+.btn-reset:hover {
+    background-color: rgb(209, 18, 57);
+}
+
+.btn-reset:active {
+    outline: 1px solid rgba(220, 20, 60, 0.686);
+}
+
+.btn-cenzor {
+    background-color: forestgreen;
+    color: white;
+}
+
+.btn-cenzor:hover {
+    background-color: rgb(30, 123, 30);
+}
+
+.btn-cenzor:active {
+    outline: 1px solid rgba(34, 139, 34, 0.545);
+}
+
+.word-here:focus,
+.textarea:focus {
+    outline: 1px solid rgb(1, 144, 187);
+}
+
+.red-border {
+    border: 1px solid red;
+}
+
+.green-border {
+    border: 1px solid green;
+}
+
+.border-none {
+    border: none;
+}
